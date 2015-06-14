@@ -29,7 +29,7 @@ public class EmailSender {
 
     @PostConstruct
     public void init() {
-        logger.info(String.format("smtp-host=%s,smtp-port=%s,mail-from:%s,email-override:%s",mailHost,mailPort,mailFrom,emailOverride));
+        logger.info(String.format("emailDisable=%s,emailOnly=%s,smtp-host=%s,smtp-port=%s,mail-from:%s,email-override:%s",emailDisabled,emailOnly,mailHost,mailPort,mailFrom,emailOverride));
     }
 
     public void email(String recipient, String subject, String body) {
