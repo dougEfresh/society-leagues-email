@@ -19,7 +19,7 @@ public class EmailService implements Runnable {
     @PostConstruct
     public void init() {
         logger.info("Email Scheduler Enabled");
-        threadPool.scheduleAtFixedRate(this,1,1,TimeUnit.MINUTES);
+        threadPool.scheduleAtFixedRate(this,10,10,TimeUnit.SECONDS);
     }
 
     @Override
